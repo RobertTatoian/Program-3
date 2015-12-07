@@ -13,7 +13,7 @@ public class Arm {
 	public int					JOINT_COLOR	= 0xFFFF0000;
 	public int					LINK_COLOR	= 0xFF0000FF;
 	private final float			JOINT_DIAM	= 0.1f;
-	private float[ ]			theta		= { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	//private float[ ]			theta		= { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	private ArrayList <Float> armThetas = new ArrayList<Float>();
 	// Right now I have reduced this because the mathematics of inverse
 	// kinematics so far can only handle a 2x2 Jacobian matrix

@@ -2,13 +2,11 @@ package program3;
 
 import java.util.ArrayList;
 
-import com.sun.prism.paint.Color;
-
 import processing.core.PApplet;
 
 public class CircleWithArms {
 	
-	private int NUMBER_ARMS = 1;
+	private int NUMBER_ARMS = 2;
 	
 	private float armX, armY; 
 	private Arm arm;

@@ -12,6 +12,7 @@ public class Program3 extends PApplet {
 
 
 	// dimensions of the world in world units
+	@SuppressWarnings("unused")
 	private static float WORLD_WIDTH = 4, WORLD_HEIGHT = 2;
 	private static float pixelToWorld, worldToPixel;
 	// screen coordinates of the world's origin
@@ -19,6 +20,7 @@ public class Program3 extends PApplet {
 	
 	float[] toolMatrix = {1, 0, 0, 0, 1, 0};
 	
+	@SuppressWarnings("unused")
 	private float toolX, toolY; 
 	private static CircleWithArms cwa;
 	
