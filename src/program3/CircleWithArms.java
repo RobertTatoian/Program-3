@@ -27,7 +27,8 @@ public class CircleWithArms {
 	}
 	
 	public void draw(PApplet app) {
-	//	app.ellipse(0, 0, 10, 10);
+		app.noStroke();
+		app.ellipse(0, 1.5f, 1.5f, 1.5f);
 		
 		for(int i = 0; i < arms.size(); i++) {
 			arms.get(i).draw(app);

@@ -57,7 +57,7 @@ public class Program3 extends PApplet {
 		
 		
 		// draw the ground plane		
-		line(-WORLD_WIDTH/2, 0, +WORLD_WIDTH/2, 0);
+//		line(-WORLD_WIDTH/2, 0, +WORLD_WIDTH/2, 0);
 		
 		drawArm();
 		
