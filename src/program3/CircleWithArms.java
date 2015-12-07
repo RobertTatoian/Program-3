@@ -8,7 +8,7 @@ import processing.core.PApplet;
 
 public class CircleWithArms {
 	
-	private int NUMBER_ARMS = 6;
+	private int NUMBER_ARMS = 1;
 	
 	private float armX, armY; 
 	private Arm arm;
@@ -18,9 +18,9 @@ public class CircleWithArms {
 	public CircleWithArms(PApplet app){
 		
 		for(int i = 0; i < NUMBER_ARMS ; i++) {
-			armX = app.random(-1,1);
-			armY = app.random(0,1);
-			arm = new Arm(armX, armY, app.color(app.random(0, 255), app.random(0, 255), app.random(0, 255)), app.color(app.random(0, 255), app.random(0, 255), app.random(0, 255)));
+			armX = 1;//app.random(1.5,1);
+			armY = 0;//app.random(0,1);
+			arm = new Arm(app, armX, armY, app.color(app.random(0, 255), app.random(0, 255), app.random(0, 255)), app.color(app.random(0, 255), app.random(0, 255), app.random(0, 255)));
 			arms.add(arm);
 		}
 		
@@ -28,7 +28,8 @@ public class CircleWithArms {
 	
 	public void draw(PApplet app) {
 		app.noStroke();
-		app.ellipse(0, 1.5f, 1.5f, 1.5f);
+		
+		app.ellipse(0, 0, 2f, 2f);
 		
 		for(int i = 0; i < arms.size(); i++) {
 			arms.get(i).draw(app);

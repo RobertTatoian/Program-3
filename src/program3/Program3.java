@@ -30,11 +30,11 @@ public class Program3 extends PApplet {
 	public void setup() {
 		 cwa = new CircleWithArms(this);
 		
-		pixelToWorld = WORLD_WIDTH/width;
-		worldToPixel = width/WORLD_WIDTH;
+		pixelToWorld = WORLD_WIDTH/(width/2);
+		worldToPixel = (width/2)/WORLD_WIDTH;
 		
 		worldX = width/2;
-		worldY = 7*height/8;
+		worldY = height/2;
 	}
 
 	private Point2D.Float pixelToWorld(int ix, int iy) {
