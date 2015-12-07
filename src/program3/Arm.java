@@ -14,18 +14,19 @@ public class Arm {
 	private final int NUM_JOINTS = 6;
 	//				index 0 is for padding
 	private float[] L = {0, 1.f, 0.5f, 0.70f, 0.60f, 0, 1.f, 0.5f, 0.70f, 0.60f};
-	private float H = 1.0f;
-	
+	private float armX = 0.0f;
+	private float armY = 1.0f;
+
 	
 	public void draw(PApplet app) {
 		// draw the arm		
 		app.stroke(LINK_COLOR);
 		app.strokeWeight(0.1f);
-		app.line(0, 0, 0, H);
+    	app.line(0, 0, 0, armY);
 		app.noStroke();
 		app.fill(JOINT_COLOR);
 		app.ellipse(0, 0, JOINT_DIAM, JOINT_DIAM);
-		app.translate(0, H);
+		app.translate(armX, armY);
 		
 		for (int k=1; k<=NUM_JOINTS; k++) 
 		{
