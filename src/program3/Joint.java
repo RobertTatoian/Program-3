@@ -21,7 +21,8 @@ public class Joint {
 		
 		app.stroke(LINK_COLOR);
 		//strokeWeight(5);
-		app.line(0, 0, L, 0);
+		//app.line(0, 0, L, 0);
+		app.rect(0, 0, L, 0, 50);
 		app.noStroke();
 		app.fill(JOINT_COLOR);
 		app.ellipse(0, 0, JOINT_DIAM, JOINT_DIAM);
