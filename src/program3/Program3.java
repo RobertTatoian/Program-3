@@ -20,6 +20,7 @@ public class Program3 extends PApplet {
 	float[] toolMatrix = {1, 0, 0, 0, 1, 0};
 	
 	private float toolX, toolY; 
+	private static CircleWithArms cwa;
 	
 	public void settings() {
 		size(1024, 1024);
@@ -27,6 +28,8 @@ public class Program3 extends PApplet {
 
 	
 	public void setup() {
+		 cwa = new CircleWithArms(this);
+		
 		pixelToWorld = WORLD_WIDTH/width;
 		worldToPixel = width/WORLD_WIDTH;
 		
@@ -65,8 +68,11 @@ public class Program3 extends PApplet {
 	private void drawArm() {
 		pushMatrix();
 
-		Arm arm = new Arm();
-		arm.draw(this);
+//		Arm arm = new Arm();
+//		arm.draw(this);
+		
+		
+		cwa.draw(this);
 		
 		// When we leave the loop, and before the pop the matrix, the current
 		// reference frame is the one we find ourselves at following the final translate
